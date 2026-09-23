@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SidtheDev.portfolio | Siddharth R</title>
+  <meta name="description" content="Portfolio of Siddharth R. Game developer and programmer from IIT Madras specializing in Unity, C#, C++, and Python." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo">
+        <span class="brand-title">SidtheDev<span class="brand-sub">.portfolio</span></span>
+      </a>
+      <nav class="nav-links">
+        <a href="#games" class="nav-link">Games</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="mailto:siddharth.official77@gmail.com" class="btn btn-sm btn-primary">Reach Out</a>
+      </nav>
+      <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-intro">
+          <div class="badge-student">
+            <span class="status-indicator"></span>
+            IIT Madras • B.Tech Mechanical Engineering
+          </div>
+          <h1 class="hero-headline">
+            Hi, I'm <span class="name-highlight">Siddharth R</span>.
+          </h1>
+          <p class="hero-bio">
+            Game developer and programmer from IIT Madras.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#games" class="btn btn-primary btn-lg">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              View Games
+            </a>
+            <a href="#contact" class="btn btn-secondary btn-lg">
+              Contact
+            </a>
+          </div>
+
+          <div class="quick-stats-row">
+            <div class="stat-item">
+              <span class="stat-value text-gold">4th Place</span>
+              <span class="stat-desc">GDAI Game Connect Challenge</span>
+            </div>
+            <div class="stat-sep"></div>
+            <div class="stat-item">
+              <span class="stat-value">2 Games</span>
+              <span class="stat-desc">Published on Google Play Store</span>
+            </div>
+            <div class="stat-sep"></div>
+            <div class="stat-item">
+              <span class="stat-value">Unity & C#</span>
+              <span class="stat-desc">Gameplay & Systems Programming</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Games Portfolio Section -->
+    <section class="games-section" id="games">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-eyebrow">Projects</span>
+          <h2 class="section-title">Featured Games</h2>
+          <p class="section-subtitle">
+            Games I've developed, featuring competition entries, mobile releases, and jam projects.
+          </p>
+
+          <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">All Games (4)</button>
+            <button class="filter-btn" data-filter="award">GDAI 4th Place</button>
+            <button class="filter-btn" data-filter="playstore">Play Store Releases</button>
+            <button class="filter-btn" data-filter="jam">Game Jam Entry</button>
+          </div>
+        </div>
+
+        <div class="games-list">
+
+          <!-- 1. ROMEO ROMEO -->
+          <article class="game-entry" data-category="award">
+            <div class="game-banner-side">
+              <div class="media-frame">
+                <img src="assets/romeoromeo/cover.png" alt="Romeo Romeo Cover" class="main-cover" />
+                <button class="video-play-btn" onclick="openVideoModal('youtube', 'MioNLQHspyY', 'Romeo Romeo - Gameplay Trailer')" title="Play Trailer">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+                  <span>Watch Trailer</span>
+                </button>
+              </div>
+
+              <!-- Gallery strip -->
+              <div class="project-gallery">
+                <div class="gallery-label">Gallery</div>
+                <div class="gallery-grid">
+                  <img src="assets/romeoromeo/screenshot1.png" alt="Level 1 Jailbreak" onclick="openLightbox('assets/romeoromeo/screenshot1.png', 'Romeo Romeo - Level 1: Prison Cell Escape')" />
+                  <img src="assets/romeoromeo/screenshot2.png" alt="Guard Patrol" onclick="openLightbox('assets/romeoromeo/screenshot2.png', 'Romeo Romeo - Level 2: Guard Patrols & Searchlights')" />
+                  <img src="assets/romeoromeo/screenshot3.png" alt="Rooftop Escape" onclick="openLightbox('assets/romeoromeo/screenshot3.png', 'Romeo Romeo - Level 3: Rooftop Infiltration')" />
+                  <img src="assets/romeoromeo/screenshot4.png" alt="Helicopter Chase" onclick="openLightbox('assets/romeoromeo/screenshot4.png', 'Romeo Romeo - Final Helicopter Pursuit')" />
+                </div>
+              </div>
+            </div>
+
+            <div class="game-details-side">
+              <div class="entry-header">
+                <div class="award-tag">
+                  🏆 4th Place • Game Connect by GDAI (InterIIT Techmeet 14.0)
+                </div>
+                <h3 class="entry-title">Romeo Romeo</h3>
+                <div class="entry-subtitle">3-Level Stealth Prison Escape Platformer</div>
+              </div>
+
+              <div class="highlight-callout">
+                <strong>GDAI Game Connect Challenge:</strong> Secured <strong>4th place</strong> out of 22 participating IITs for the problem statement by Game Connect by GDAI in InterIIT Techmeet 14.0.
+              </div>
+
+              <p class="entry-text">
+                Romeo Romeo is a high-difficulty 2D platformer set across <strong>3 carefully designed levels</strong>. Players must break out of prison confinement, avoiding security searchlights, patrolling cops, and helicopter pursuits using precision jumps and stealth timing.
+              </p>
+
+              <div class="feature-bullets">
+                <div class="bullet-item">
+                  <span class="bullet-icon">•</span>
+                  <span><strong>3 Handcrafted Levels:</strong> Escalating difficulty from holding cell blocks up to the high-security rooftop escape.</span>
+                </div>
+                <div class="bullet-item">
+                  <span class="bullet-icon">•</span>
+                  <span><strong>Stealth & Vision Mechanics:</strong> Guard line-of-sight detection cones, hiding spots, and alert states.</span>
+                </div>
+                <div class="bullet-item">
+                  <span class="bullet-icon">•</span>
+                  <span><strong>Movement & Physics:</strong> Wall jumps, momentum boosts, and responsive platforming controls.</span>
+                </div>
+              </div>
+
+              <div class="tech-row">
+                <span class="tech-chip">Unity 2D</span>
+                <span class="tech-chip">C#</span>
+                <span class="tech-chip">Stealth AI</span>
+                <span class="tech-chip">WebGL</span>
+                <span class="tech-chip">Level Design</span>
+              </div>
+
+              <!-- BIG ACTION BUTTON -->
+              <div class="entry-actions">
+                <a href="https://gamedevguildiitm.itch.io/romeoromeo" target="_blank" rel="noopener noreferrer" class="btn btn-action-big btn-itch">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M2.5 4h19v3.5c0 2.5-2 4.5-4.5 4.5-1.8 0-3.3-1-4-2.5-.7 1.5-2.2 2.5-4 2.5-1.8 0-3.3-1-4-2.5-.7 1.5-2.2 2.5-4 2.5-2.5 0-4.5-2-4.5-4.5V4zm1.5 8.2c.8.5 1.8.8 2.8.8 1.8 0 3.3-1 4.1-2.4.8 1.4 2.3 2.4 4.1 2.4 1.8 0 3.3-1 4.1-2.4.8 1.4 2.3 2.4 4.1 2.4 1 0 2-.3 2.8-.8v4.8c0 2.2-1.8 4-4 4H6c-2.2 0-4-1.8-4-4v-4.8z"/></svg>
+                  <span>Play Romeo Romeo on Itch.io (WebGL)</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- 2. BOLTRACE -->
+          <article class="game-entry" data-category="playstore">
+            <div class="game-banner-side">
+              <div class="media-frame">
+                <img src="assets/boltrace/thumbnail.jpg" alt="BoltRace Gameplay Banner" class="main-cover" />
+                <button class="video-play-btn" onclick="openVideoModal('youtube', '57O1rx34XHU', 'BoltRace - Official Gameplay')" title="Play Video">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+                  <span>Watch Gameplay</span>
+                </button>
+                <div class="app-icon-overlay">
+                  <img src="assets/boltrace/icon.png" alt="BoltRace Icon" />
+                </div>
+              </div>
+
+              <!-- Gallery strip -->
+              <div class="project-gallery">
+                <div class="gallery-label">Gallery</div>
+                <div class="gallery-grid">
+                  <img src="assets/boltrace/Sprite_10.png" alt="Car Sprite" class="sprite-preview" onclick="openLightbox('assets/boltrace/Sprite_10.png', 'BoltRace - Vehicle Asset')" />
+                  <img src="assets/boltrace/Sprite_12.png" alt="Track Tile" class="sprite-preview" onclick="openLightbox('assets/boltrace/Sprite_12.png', 'BoltRace - Racing Track Component')" />
+                  <img src="assets/boltrace/Sprite_15.png" alt="Hazard Obstacle" class="sprite-preview" onclick="openLightbox('assets/boltrace/Sprite_15.png', 'BoltRace - Road Obstacle')" />
+                  <img src="assets/boltrace/Sprite_21.png" alt="UI Dashboard" class="sprite-preview" onclick="openLightbox('assets/boltrace/Sprite_21.png', 'BoltRace - UI Assets')" />
+                </div>
+              </div>
+            </div>
+
+            <div class="game-details-side">
+              <div class="entry-header">
+                <div class="store-tag">
+                  📱 Google Play Store Release (Archived)
+                </div>
+                <h3 class="entry-title">BoltRace</h3>
+                <div class="entry-subtitle">3D Arcade Racing with Gear Shift System & In-Game Shop</div>
+              </div>
+
+              <p class="entry-text">
+                BoltRace is a 3D arcade racing game developed for Android with a complete campaign progression and defined ending. It features tactile gear shifting, racing alongside 2 other cars, and an in-game garage shop.
+              </p>
+
+              <div class="feature-bullets">
+                <div class="bullet-item">
+                  <span class="bullet-icon">•</span>
+                  <span><strong>In-Game Garage Shop:</strong> Unlock and drive <strong>3 different cars</strong> with distinct handling profiles.</span>
+                </div>
+                <div class="bullet-item">
+                  <span class="bullet-icon">•</span>
+                  <span><strong>6 Unique Racing Arenas:</strong> Varied track layouts and environments with increasing challenge.</span>
+                </div>
+                <div class="bullet-item">
+                  <span class="bullet-icon">•</span>
+                  <span><strong>Multi-Car Competition:</strong> Race on the track against <strong>2 other cars</strong>.</span>
+                </div>
+                <div class="bullet-item">
+                  <span class="bullet-icon">•</span>
+                  <span><strong>Tactile Gear System:</strong> Timed manual gear shifts to manage acceleration and top speed.</span>
+                </div>
+                <div class="bullet-item">
+                  <span class="bullet-icon">•</span>
+                  <span><strong>Two Game Modes:</strong> <em>Race Against Time Mode</em> (beat the timer) and <em>Race to Finish First Mode</em> (race to finish first against rival cars).</span>
+                </div>
+              </div>
+
+              <div class="tech-row">
+                <span class="tech-chip">Unity 3D</span>
+                <span class="tech-chip">C#</span>
+                <span class="tech-chip">Android SDK</span>
+                <span class="tech-chip">Track Racing Logic</span>
+                <span class="tech-chip">Mobile UI & Shop System</span>
+              </div>
+
+              <!-- BIG ACTION BUTTON -->
+              <div class="entry-actions">
+                <a href="downloads/BoltRace.apk" download="BoltRace.apk" class="btn btn-action-big btn-download">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                  <span>Download BoltRace APK</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- 3. BALLERINA CAPPUCCINA (Moved to 3rd position after BoltRace) -->
+          <article class="game-entry" data-category="jam">
+            <div class="game-banner-side">
+              <div class="media-frame">
+                <img src="assets/ballerina/cover.png" alt="Ballerina Cappuccina Cover" class="main-cover" />
+              </div>
+
+              <!-- Gallery strip -->
+              <div class="project-gallery">
+                <div class="gallery-label">Gallery</div>
+                <div class="gallery-grid">
+                  <img src="assets/ballerina/screenshot1.png" alt="Arena combat" onclick="openLightbox('assets/ballerina/screenshot1.png', 'Ballerina Cappuccina - 1v1 Arena Clash')" />
+                  <img src="assets/ballerina/screenshot2.png" alt="Split screen" onclick="openLightbox('assets/ballerina/screenshot2.png', 'Ballerina Cappuccina - Split Screen Multiplayer')" />
+                  <img src="assets/ballerina/screenshot3.png" alt="Shop & Armor" onclick="openLightbox('assets/ballerina/screenshot3.png', 'Ballerina Cappuccina - Armor Customization Shop')" />
+                  <img src="assets/ballerina/screenshot4.png" alt="Power-up battle" onclick="openLightbox('assets/ballerina/screenshot4.png', 'Ballerina Cappuccina - Center Power-Up')" />
+                  <img src="assets/ballerina/screenshot5.png" alt="Knockout" onclick="openLightbox('assets/ballerina/screenshot5.png', 'Ballerina Cappuccina - Arena Ring-Out Impact')" />
+                </div>
+              </div>
+            </div>
+
+            <div class="game-details-side">
+              <div class="entry-header">
+                <div class="jam-tag">
+                  🕹️ Rank 2,605 / 3,501 • The Very Serious Juniper Dev Game Jam
+                </div>
+                <h3 class="entry-title">Ballerina Cappuccina</h3>
+                <div class="entry-subtitle">3D Physics-Driven 1v1 Arena Brawler</div>
+              </div>
+
+              <p class="entry-text">
+                A fast-paced local 1v1 arena combat game inspired by Beyblade battles. Built for The Very Serious Juniper Dev Game Jam (ranking <strong>2,605 out of 3,501</strong> entries), it combines rotational physics, centrifugal collision forces, dynamic camera toggles, and an in-match armor economy.
+              </p>
+
+              <div class="feature-bullets">
+                <div class="bullet-item">
+                  <span class="bullet-icon">•</span>
+                  <span><strong>Physics-Driven Centrifugal Combat:</strong> Collision impacts calculated directly from rotational angular momentum and velocity.</span>
+                </div>
+                <div class="bullet-item">
+                  <span class="bullet-icon">•</span>
+                  <span><strong>3-Way Armor Customization:</strong> In-game shop to buy armor specialized in <em>Defense</em> (sturdiness), <em>Attack</em> (impact force), or <em>Speed</em> (rapid movement).</span>
+                </div>
+                <div class="bullet-item">
+                  <span class="bullet-icon">•</span>
+                  <span><strong>Local Split-Screen with 3 Dynamic Cameras:</strong> Real-time toggleable tactical camera views for 2-player local matches.</span>
+                </div>
+                <div class="bullet-item">
+                  <span class="bullet-icon">•</span>
+                  <span><strong>Center Arena Power-Ups:</strong> Attack multipliers, heavy defense shields, and RPM/spin recovery charges.</span>
+                </div>
+              </div>
+
+              <div class="tech-row">
+                <span class="tech-chip">Unity 3D</span>
+                <span class="tech-chip">C#</span>
+                <span class="tech-chip">Rigidbody Physics</span>
+                <span class="tech-chip">Split-Screen System</span>
+                <span class="tech-chip">Shop & Money Logic</span>
+              </div>
+
+              <!-- BIG ACTION BUTTON -->
+              <div class="entry-actions">
+                <a href="https://stormbolt797.itch.io/ballerinacappuccina" target="_blank" rel="noopener noreferrer" class="btn btn-action-big btn-itch">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M2.5 4h19v3.5c0 2.5-2 4.5-4.5 4.5-1.8 0-3.3-1-4-2.5-.7 1.5-2.2 2.5-4 2.5-1.8 0-3.3-1-4-2.5-.7 1.5-2.2 2.5-4 2.5-2.5 0-4.5-2-4.5-4.5V4zm1.5 8.2c.8.5 1.8.8 2.8.8 1.8 0 3.3-1 4.1-2.4.8 1.4 2.3 2.4 4.1 2.4 1.8 0 3.3-1 4.1-2.4.8 1.4 2.3 2.4 4.1 2.4 1 0 2-.3 2.8-.8v4.8c0 2.2-1.8 4-4 4H6c-2.2 0-4-1.8-4-4v-4.8z"/></svg>
+                  <span>Play / Download Ballerina Cappuccina on Itch.io</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- 4. SPACEBUSTER -->
+          <article class="game-entry" data-category="playstore">
+            <div class="game-banner-side">
+              <div class="media-frame">
+                <img src="assets/spacebuster/thumbnail.jpg" alt="SpaceBuster Gameplay Banner" class="main-cover" />
+                <button class="video-play-btn" onclick="openVideoModal('youtube', 'zld9FsV2DT8', 'SpaceBuster - Gameplay Showcase')" title="Play Video">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+                  <span>Watch Gameplay</span>
+                </button>
+                <div class="app-icon-overlay">
+                  <img src="assets/spacebuster/icon.png" alt="SpaceBuster Icon" />
+                </div>
+              </div>
+
+              <!-- Gallery strip -->
+              <div class="project-gallery">
+                <div class="gallery-label">Gallery</div>
+                <div class="gallery-grid">
+                  <img src="assets/spacebuster/thumbnail.jpg" alt="Space combat" onclick="openLightbox('assets/spacebuster/thumbnail.jpg', 'SpaceBuster - In-Game Boss & Asteroid Dodging')" />
+                  <img src="assets/spacebuster/icon.png" alt="Icon Art" onclick="openLightbox('assets/spacebuster/icon.png', 'SpaceBuster - Google Play Icon Art')" />
+                </div>
+              </div>
+            </div>
+
+            <div class="game-details-side">
+              <div class="entry-header">
+                <div class="store-tag">
+                  🚀 First Published Game • Google Play Store (Archived)
+                </div>
+                <h3 class="entry-title">SpaceBuster</h3>
+                <div class="entry-subtitle">Arcade Space Shooter • 10 Levels with Boss Battle</div>
+              </div>
+
+              <div class="highlight-callout info-callout">
+                <strong>Developer Note:</strong> SpaceBuster was my first published game on the Google Play Store, focused on touch steering, space combat, and a 10-level progression with a final boss fight.
+              </div>
+
+              <p class="entry-text">
+                A classic arcade space shooter where players navigate through asteroid fields, shoot incoming enemy craft, collect power-up drops, and progress through <strong>10 structured levels</strong> culminating in a final boss encounter.
+              </p>
+
+              <div class="feature-bullets">
+                <div class="bullet-item">
+                  <span class="bullet-icon">•</span>
+                  <span><strong>10 Levels & Final Boss:</strong> Level-by-level progression leading to a dedicated boss encounter on level 10.</span>
+                </div>
+                <div class="bullet-item">
+                  <span class="bullet-icon">•</span>
+                  <span><strong>Asteroid Dodging & Shooting:</strong> Responsive touch steering to weave through dense obstacles and blast enemies.</span>
+                </div>
+                <div class="bullet-item">
+                  <span class="bullet-icon">•</span>
+                  <span><strong>Collectible Power-Ups:</strong> Collectible drops to increase firing rate and survivability.</span>
+                </div>
+                <div class="bullet-item">
+                  <span class="bullet-icon">•</span>
+                  <span><strong>Visual FX:</strong> Clean 2D explosion particle effects and projectile feedback.</span>
+                </div>
+              </div>
+
+              <div class="tech-row">
+                <span class="tech-chip">Unity 2D</span>
+                <span class="tech-chip">C#</span>
+                <span class="tech-chip">Android Touch Controls</span>
+                <span class="tech-chip">Mobile Deployment</span>
+              </div>
+
+              <!-- BIG ACTION BUTTON -->
+              <div class="entry-actions">
+                <a href="downloads/SpaceBuster.apk" download="SpaceBuster.apk" class="btn btn-action-big btn-download">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                  <span>Download SpaceBuster APK</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-eyebrow">Expertise</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <p class="section-subtitle">Core tools and programming languages I use for game development.</p>
+        </div>
+
+        <div class="core-skills-grid">
+          <div class="core-skill-card">
+            <div class="skill-name">Unity</div>
+            <div class="skill-detail">2D & 3D Game Engine, WebGL & Android Mobile Builds</div>
+          </div>
+          <div class="core-skill-card">
+            <div class="skill-name">C#</div>
+            <div class="skill-detail">Gameplay Programming, Architecture & Physics Logic</div>
+          </div>
+          <div class="core-skill-card">
+            <div class="skill-name">C++</div>
+            <div class="skill-detail">Object-Oriented Programming, Performance & Systems</div>
+          </div>
+          <div class="core-skill-card">
+            <div class="skill-name">Python</div>
+            <div class="skill-detail">Scripting, Tooling & Automation</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-card-simple">
+          <span class="section-eyebrow">About</span>
+          <h2 class="about-heading">About Me</h2>
+          <p>
+            I'm <strong>Siddharth R</strong>, a game developer and undergraduate student pursuing my <strong>B.Tech in Mechanical Engineering at IIT Madras</strong>.
+          </p>
+          <p>
+            I focus on gameplay programming, physics systems, and building intuitive mechanics. I've designed and shipped games across Unity 2D/3D for competitions (securing 4th place in the GDAI Game Connect challenge at InterIIT Techmeet 14.0), game jams, and mobile releases on Google Play Store.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-header">
+            <span class="section-eyebrow">Direct Contact</span>
+            <h2>Contact Details</h2>
+            <p>Get in touch for inquiries, game development opportunities, or projects.</p>
+          </div>
+
+          <div class="contact-channels">
+            <!-- Email -->
+            <a href="mailto:siddharth.official77@gmail.com" class="contact-item">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="contact-meta">
+                <span class="contact-label">Email</span>
+                <span class="contact-value">siddharth.official77@gmail.com</span>
+              </div>
+            </a>
+
+            <!-- Phone -->
+            <a href="tel:9384849418" class="contact-item">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div class="contact-meta">
+                <span class="contact-label">Phone</span>
+                <span class="contact-value">+91 9384849418</span>
+              </div>
+            </a>
+
+            <!-- Combined Single Itch.io Card with Both Links -->
+            <div class="contact-item contact-item-wide">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M2.5 4h19v3.5c0 2.5-2 4.5-4.5 4.5-1.8 0-3.3-1-4-2.5-.7 1.5-2.2 2.5-4 2.5-1.8 0-3.3-1-4-2.5-.7 1.5-2.2 2.5-4 2.5-2.5 0-4.5-2-4.5-4.5V4zm1.5 8.2c.8.5 1.8.8 2.8.8 1.8 0 3.3-1 4.1-2.4.8 1.4 2.3 2.4 4.1 2.4 1.8 0 3.3-1 4.1-2.4.8 1.4 2.3 2.4 4.1 2.4 1 0 2-.3 2.8-.8v4.8c0 2.2-1.8 4-4 4H6c-2.2 0-4-1.8-4-4v-4.8z"/></svg>
+              </div>
+              <div class="contact-meta">
+                <span class="contact-label">Itch.io Profiles</span>
+                <div class="itch-links-group">
+                  <a href="https://gamedevguildiitm.itch.io" target="_blank" rel="noopener noreferrer" class="itch-sublink">
+                    <span>gamedevguildiitm.itch.io</span> ↗
+                  </a>
+                  <span class="itch-sep">•</span>
+                  <a href="https://stormbolt797.itch.io" target="_blank" rel="noopener noreferrer" class="itch-sublink">
+                    <span>stormbolt797.itch.io</span> ↗
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div>
+        <strong>SidtheDev.portfolio</strong> — Siddharth R (IIT Madras)
+      </div>
+      <div class="footer-copy">
+        &copy; 2026 Siddharth R.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Video Modal -->
+  <div class="modal" id="videoModal" aria-hidden="true" role="dialog">
+    <div class="modal-backdrop" onclick="closeVideoModal()"></div>
+    <div class="modal-container">
+      <div class="modal-header">
+        <h4 class="modal-title" id="videoModalTitle">Video Preview</h4>
+        <button class="modal-close" onclick="closeVideoModal()" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body" id="videoModalBody"></div>
+    </div>
+  </div>
+
+  <!-- Image Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal" aria-hidden="true" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+    <div class="lightbox-content" onclick="event.stopPropagation()">
+      <img src="" alt="Enlarged screenshot" id="lightboxImg" />
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
