@@ -244,6 +244,14 @@ a {
 
 .hero-container {
   max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .badge-student {
@@ -278,6 +286,7 @@ a {
   line-height: 1.6;
   color: #cbd5e1;
   margin-bottom: 32px;
+  max-width: 600px;
 }
 
 .hero-cta-group {
@@ -285,16 +294,19 @@ a {
   gap: 16px;
   margin-bottom: 48px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .quick-stats-row {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 28px;
   padding: 20px 28px;
   background: var(--bg-card);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
+  margin: 0 auto;
   width: fit-content;
   flex-wrap: wrap;
 }
@@ -302,6 +314,7 @@ a {
 .stat-item {
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 .stat-value {
@@ -690,10 +703,12 @@ a {
 
 .about-card-simple {
   max-width: 800px;
+  margin: 0 auto;
   background: var(--bg-card);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
-  padding: 36px 40px;
+  padding: 40px;
+  text-align: center;
 }
 
 .about-heading {
