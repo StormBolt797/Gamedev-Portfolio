@@ -32,10 +32,4 @@ Contact: +91 9384849418 | siddharth.official77@gmail.com
 
 ---
 
-## 🚀 Running Locally
-
-```bash
-cd /home/siddharth/portfolio
-python3 -m http.server 8080
-```
-Open `http://localhost:8080` in your web browser.
+Website Link: https://stormbolt797.github.io/Gamedev-Portfolio/
