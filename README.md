@@ -1,7 +1,7 @@
 # SidtheDev.portfolio — Siddharth R
 
 **Siddharth R** | B.Tech in Mechanical Engineering, IIT Madras  
-Contact: siddharth.official77@gmail.com
+Contact: siddharth.official77@gmail.com / me25b122@smail.iitm.ac.in
 
 ---
 
